@@ -1,0 +1,603 @@
+CODERHOUSE - JAVASCRIPT
+
+
+
+APLICACIÓN WEB:
+
+Son más dinámicas, interactivas y no son estáticas.
+
+
+
+Lenguaje de programación para agregar dinamismo a sitios
+web y aplicaciones web.
+Funciona en complemento con HTML y CSS. Permite
+crear más funcionalidades de interactividad con los
+usuarios e interactuar con otras aplicaciones o servicios
+de backend.
+
+ES UN LEGNGUAJE INTERPRETADO:
+Es decir, se ejecuta por medio de un programa interprete.
+
+se utiliza en front-edn y back-end.
+
+HISTORIA DE JAVASCRIPT:
+
+
+Aparece por primera vez en 1995, utilizado como herramienta del
+navegador Netscape Navigator.
+
+Su primera versión oficial fue en 1997.
+Actualmente la versión más reciente es la 13.
+
+
+
+
+----- CONCEPTOS BÁSICOS -----
+
+Datos, Variables, Objetos, Arrays, Funciones.
+
+
+
+-Datos:
+    Numéricos
+    Cadena
+    Booleanos
+    Punteros
+
+-Variables:
+    Globales
+    Locales
+
+-Objetos:
+    Array
+    Boolean
+    Date
+    Math
+    String
+
+-Arrays:
+    Índice
+    Longitud
+
+-Funciones:
+    Argumentos
+
+
+
+
+
+
+
+
+
+----- ALGORITMOS -----
+
+Conjunto de funciones que le damos a un programa para que lo ejecute
+cuando se lo requiera.
+
+
+
+
+
+
+
+
+
+
+
+----- SINTAXIS Y CÓDIGO -----
+
+No se tienen en cuenta los espacios en blanco.
+Es Case sensitive.
+Permite la existencia de comentarios en el código.
+    Comentario:
+    // Comentario
+    /*Comentario de varias lineas*/
+
+
+
+Palabras reservadas:
+Son aquellas que se utilizan para construir las sentencias de 
+javaScript y que por tanto no pueden ser utilizadas
+libremente.
+
+
+
+----- Variables y Valores -----
+
+Una variable es un espacio reservado en la memoria que puede cambiar 
+de contenido a lo largo de la ejecución de un programa.
+Almacena diferentes tipos de datos que posteriormente se utilizaran en la aplicación.
+
+
+
+Para crear una variable hay que declararla:
+
+let nombre;
+
+
+Tipos:
+    Number
+    String
+
+
+
+Al declarar todo se inicializa la variable.
+
+Una variable "const" no puede cambiar.
+
+las constantes, habitualmente, se colocan en mayusculas.
+
+
+
+
+----- PROMPT, CONSOLA Y ALERT -----
+
+consol.log()
+muestra en la consola
+
+
+
+parseFloat:
+pasa string a número (si el string es un número ["20"])
+
+
+const numero = "2024";
+console.log(parseFloat(numero));
+
+// parseInt
+utiliza numero entero o decimal y redondea hacia abajo al decimal; aunque esté en decimal
+muestra el redondeado a entero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Condicionales:
+
+Ejecutar alguna acción si sucede ciera condición establecida.
+
+
+Boooleanos:
+    Tipo de dato que solo tira verdadero o falso.
+    
+
+OPERADORES:
+    igual, es distinto, menor, menor o igual, mayor,
+    mayor o igual, and, or, not. Sintaxis basada en simbolos.
+
+
+and(&&) y or(||) permite concatenar condiciones.
+
+==  Igual
+===  Estrictamente igual
+
+
+Null
+Undefined
+
+
+
+
+
+
+
+
+---------- CICLOS E ITERACIONES ----------
+
+
+
+
+
+
+
+Los ciclos son un medio rápudo y sencillo para hacer algo repetitivamente.
+FOR, WHILE, DO...WHILE.
+
+
+Tipos:
+
+    CICLOS POR CONTEO:
+    Repiten la tarea un número de veces determinada.
+
+    CICLOS CONDICIONALES:
+    Repiten la tarea mientras la condición se cumpla.
+
+
+
+
+
+
+
+
+// // comentario de una línea
+
+// /*Comentario de 
+// diferentes lineas*/
+
+
+// // Declaración de variable
+// let nombre;
+
+// // Asignación de valor a variable
+// nombre = 'Lautaro';
+
+// let apellido = 'Seidem';
+
+
+
+// // Números
+
+// let anoDoNacimiento = 2001;
+
+
+// // Const
+
+// const DNI = 885999992;
+
+
+// // Operaciones
+// let edadLautaro = 2024 - anoDoNacimiento;
+
+
+
+// let nombreCompleto = nombre + " " + apellido;
+
+
+
+
+// // console.log(nombre);
+// // console.log(apellido);
+// // console.log(anoDoNacimiento);
+
+
+
+
+// // let edad = prompt("ingrese su edad:");
+// // console.log(edad);
+
+// // if(edad <= 18){
+// //     alert("no pode");
+// // }
+// // else{
+// //     alert("si pode");
+// // }
+
+
+// alert("Bienvenido a mi página de sumas");
+// let numero1 = parseInt(prompt("primer número"));
+// let numero2 = parseInt(prompt("segundo número"));
+// let resultadoSuma = numero1 + numero2;
+// alert(resultadoSuma);
+
+
+
+
+
+
+
+
+
+
+// if (true) {
+//     document.write("True");
+// }
+
+// let edad = prompt(`Verifique su edad`);
+
+// if (edad >= 18) {
+//     alert(`Bienvenido, puede ingresar`);
+// } else {
+//     alert(`No puede ingresar, es menor`);
+// }
+
+// siempre que se suma o se comparan cosas
+// JS siempre mostrará el resultado.
+// Código legible.
+
+
+
+
+// let entreNumeros = prompt(`Coloque un numero entre 10 y 50`);
+
+// if (entreNumeros < 10){
+//     alert(`Muy bajo`);
+// } else if (entreNumeros > 50) {
+//     alert(`Demasiado alto`);
+// } 
+// else {
+//     alert(`El número se encuentra entre 10 y 50`);
+// }
+
+
+// Se pudo haber utilizado "&&".
+
+
+
+/*
+    x = x + 1
+    es igual a
+    x++
+*/
+
+
+
+
+ejecuta el código y luego evalúa la condición
+
+While: 
+- La condición se evalúa antes de la primera iteración.
+- Si la condición es falsa desde el principio, el código dentro del bucle no se ejecutará en absoluto.
+
+Do while:
+- La condición se evalúa después de la primera iteración.
+- El código dentro del bucle se ejecuta al menos una vez, incluso si la condición es falsa desde el principio.
+
+
+
+
+
+
+switch (condicional)
+
+let x = 0;
+
+switch (x){ //variable a evaluar
+    case 0:
+        console.log(`X valo 0`);
+        break;
+    case 1:
+        console.log(`X valo 1`);
+        break;
+    case 2:
+        console.log(`X valo 2`);
+        break;
+    default:
+        console.log(`X no vale ni 1, ni 2`);
+}
+
+
+
+// bucleWhile(prompt(`Una vez ingresado el valor deseado, se mostrará el recorrido hacia el mismo.`))
+
+// function bucleWhile(num) {
+//     let i = 0;
+//     while (i <= num) {
+//         document.write(i + `<br>`);
+//         i++;
+//     }
+// }
+
+
+// for
+
+// for(let x = 0; x < 10; x++){ //inicializador, condición e incrementador todo junto.
+//     console.log(`Ciclo for principal número ` + x);
+
+//     for(let y = 0; y < 5; y++){
+//         console.log(`Ciclo for secundario número ` + y);
+//     }
+// }
+
+
+// while
+
+// let x = 0; // inicializador
+// while(x < 10){ // condición
+//     console.log(`Ciclo while número ` + x);
+//     x++; // incrementador
+// }
+
+
+
+// do...while
+
+// let numeroIngresado;
+// do {
+//     numeroIngresado = parseInt(prompt(`Ingrese un número de 1 a 10`));
+//     if ((numeroIngresado <= 10) && (numeroIngresado >= 1)){
+//         alert(`Felicidades, tu número es correcto.`)
+//     } else {
+//         alert(`Ingrese nuevamente, número equivocado.`)
+//     }
+// } while ((numeroIngresado > 10) || (numeroIngresado < 1));
+
+
+
+
+
+// EJEMPLOS
+
+
+// Multiplicadora
+// let ingresarNumero = parseInt(prompt(`Ingresar número para ver su tabla`));
+
+// for (let i = 1; i <= 10; i++){
+//     let resultado = ingresarNumero * i;
+//     alert(ingresarNumero + "X" + i + " = " + resultado);
+// }
+
+
+
+
+
+// let entradaNombre = prompt(`Ingrese un nombre`);
+// while (entradaNombre.toUpperCase() != `SALIR`) {
+//     alert(`El usuario ingresó ` + entradaNombre)
+//     entradaNombre = prompt(`Ingrese un nombre`);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Clase 4 //
+//  FUNCIONES  //
+
+- Conceptualizar funciónes.
+- Variables globales y locales.
+- Qué es el Scope.
+- Definir y diferenciar función anónima y flecha.
+- Identificar parametros de entrada y salida de la función.
+
+
+
+* Lugar donde guardamos un conjunto de sentencias/instrucciones 
+que le podemos dar al programa para que las guarde para utilizarlas 
+más adelante.
+
+
+// Parametros
+- Especie de variables que solo existen dentro de una función.
+
+
+// FUNCIONES DECLARADAS
+
+
+
+
+// FUNCIONES ANÓNIMAS
+
+Similares a las declaradas, pero no se pueden invocar antes de ser
+declaradas y no poseen un nombre.
+
+
+
+// FUNCIONES FLECHA
+
+Si solo se tiene una sola sentencia, se pueden omitir las llaves
+y colocar todo en una sola línea.
+A su vez, si se tiene solo un solo parámetro se pueden quitar los parentesis.
+
+
+
+
+
+
+Ambito o lugar en donde una variable o algoritmo o funcion se declara.
+
+
+
+// FUNCIONES DECLARADAS CON RETURN
+
+function saludar (nombre) {
+    return nombre;
+}
+const nombreUsuario = saludar(`Carpincho`);
+console.log(nombreUsuario);
+
+
+function saludar (a, b) {
+    return a + b;
+}
+const resultado = suma(5, 5);
+console.log(resultado);
+
+
+
+
+
+// EJERCICIOS CON CILCOS WHILE
+
+// Contador de números pares
+
+// let numero = 0;
+// let total = 0;
+
+// while (numero % 2 == 0){
+//     numero = parseInt(prompt(`Ingrese un número par:`));
+//     total++;
+// }
+// total--;
+// alert("Ha ingresado en total "+ total +" numeros pares");
+
+
+
+
+// Contraseña
+
+// let contrasenia = prompt(`Ingrese una contraseña que le guste.`);
+// let verifContrasenia;
+// let intentos = 0;
+
+// while (verifContrasenia != contrasenia && intentos < 3) {
+//     verifContrasenia = prompt(`Verifíque su contraseña:`);
+//     if (verifContrasenia == contrasenia) {
+//         alert(`Acceso concedido.`);
+//     } 
+//     else{
+//         alert(`Acceso denegado.`);
+//         intentos++;
+//     }
+// };
+// if (intentos ==3) {
+//     alert(`Fallaste 3 veces, vuelve a intentalo más tarde.`);
+// };
+
+
+
+
+
+// FUNCIONES DECLARADAS
+
+// let usuario1 = `Carpi`; // Variable global
+// let usuario2 = `Gian`;
+
+// function saludar(nombre, apellido){  
+//     console.log(`Hola, ` + nombre + `` + apellido);
+//     let algo = `algo`; // Variable local
+// }
+// saludar(`Elco`, `Brador`); // Invocar una función (reproducirla)
+
+
+
+
+
+// FUNCIONES ANÓNIMAS
+// const saludar = function() {
+//     console.log(`Hola, mundo!`)
+// }
+// saludar(`juan`);
+
+
+// FUNCIONES FLECHA
+
+// const saludar = (nombre) => {
+//     console.log(`Hola ` + nombre);
+// }
+// saludar(`juan`);
+
+
+
+
